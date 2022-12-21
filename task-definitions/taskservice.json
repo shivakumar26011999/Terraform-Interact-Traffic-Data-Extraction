@@ -1,0 +1,37 @@
+[
+    {
+      "name": "hello",
+      "image": "8072388539/ttravel:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "protocol": "tcp",
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ],
+      "environment": [
+        {
+          "name": "DB_URL",
+          "value": "local.link"
+        },
+        {
+          "name": "DB_PORT",
+          "value": "3306"
+        },
+        {
+          "name": "USERNAME",
+          "value": "aws_db_instance.rds_database.username"
+        },
+        {
+          "name": "PASSWORD",
+          "value": "var.password"
+        },
+        {
+          "name": "DB_NAME",
+          "value": "aws_db_instance.rds_database.name"
+        }
+      ]
+      
+    }
+]

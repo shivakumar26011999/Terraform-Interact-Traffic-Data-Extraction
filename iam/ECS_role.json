@@ -1,0 +1,29 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1611144390850",
+        "Action": "rds:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1611144435019",
+        "Action": "s3:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1611144455047",
+        "Action": "route53:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "Stmt1611144508523",
+        "Action": "cloudwatch:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+}
